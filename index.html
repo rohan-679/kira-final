@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="ggsquad.html">GG Squad</a>
+                        <a class="nav-link active" aria-current="page" href="ggsquad.html" target="_blank">GG Squad</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Esports Team</a>
@@ -48,7 +48,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        <a class="nav-link active" aria-current="page" href="about.html" target="_blank">About</a>
                     </li>
             </div>
         </div>
@@ -178,6 +178,18 @@
     <!-- kira scroll section  -->
 
 
+    <!-- instagram section  -->
+    <div class="insta-section">
+        <div class="insta-heading">
+            <h1>KIRA’S INSTAGRAM</h1>
+        </div>
+        <div id="instafeed-container" class="slider">
+
+        </div>
+    </div>
+    <div class="mid-line"></div>
+    <!-- instagram section  -->
+
 
     <!-- contact us  -->
     <div class="container-fluid" id="contact">
@@ -236,6 +248,30 @@
     <!-- footer  -->
 
 
+
+    <!-- instafeed  -->
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+    var InstagramToken = 'IGQVJWLTByZA2lWQ1BiSTRRdXg2NDdySUZA5b20xa0lGZA0NRQy1acGdyNXJzZA3doSDR4RnhCbW50YlNSMWpmdnBRZAVlXaDh4MlA5V29OX09oV2pZAejNQTXFDd0QzNGk1T2otQ09tazl3';
+        var userFeed = new Instafeed({
+            get: 'user',
+            limit: 4,
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            accessToken: 'IGQVJYRzZAYR3ZAkX1FiT2lLVHJhSW5QR3JRdl83TElZASmlhYUxCcmtBa1R3STFMZAjhGczVSajJweTZANd3FzMm9lZA3JYc3JodHNob2I5X05MRkhYaU9GS0xlSnphLXpfajN6SF95NG93'
+        });
+        userFeed.run();
+    </script>
+
+    <script>
+        $('#instafeed-container').owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 100000,
+        });
+    </script>
+    <!-- instafeed  -->
 
 
 
