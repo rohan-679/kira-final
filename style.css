@@ -1058,6 +1058,87 @@ body{
 }
 /* **********************************************KIRA SCROLL LEFT ENDS HERE************************************************ */
 
+
+/* **********************************************INSTAGRAM SECTION************************************************ */
+
+.insta-section {
+    background: #000;
+    padding: 10px;
+}
+.insta-section .insta-heading h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'dharma2', sans-serif;
+    /* border: 2px solid red; */
+    display: inline-block;
+    margin-left: 8%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: white;
+    border-bottom: 4px solid red;
+}
+
+#instafeed-container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#instafeed-container img{
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    margin-bottom: 180px;
+}
+#instafeed-container img:hover{
+    transform: scale(1.1);
+}
+@media only screen and (min-width: 2000px){
+    #instafeed-container img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 1600px){
+    #instafeed-container img{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #instafeed-container img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 100px;
+    }
+} 
+@media only screen and (max-width: 768px){
+    #instafeed-container img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .insta-section .insta-heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .insta-section .insta-heading h1{
+        margin-left: 0;
+    }
+} 
+@media only screen and (max-width: 480px){
+    .insta-section .insta-heading h1{
+        font-size: 50px;
+        margin-left: 0;
+    }
+}
+/* **********************************************INSTAGRAM SECTION ENDS************************************************ */
+
+
+
 /* **********************************************CONTACT US************************************************ */
 #contact{
     background: #000000;
