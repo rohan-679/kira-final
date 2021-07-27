@@ -94,7 +94,7 @@ body{
         padding: 0 0;
     }
     .navbar-dark .navbar-nav .nav-link {
-        font-size: 18px;
+        font-size: 20px;
     }
     #kira-logo {
         width: 70px;
@@ -1077,36 +1077,63 @@ body{
     color: white;
     border-bottom: 4px solid red;
 }
-
+.insta-section .insta-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #instafeed-container{
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0 20px;
 }
 #instafeed-container img{
+    margin-right: 50px;
     width: 250px;
     height: 250px;
-    margin: 20px 0;
+    margin: 20px;
     transition: all 0.3s ease;
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
+}
+#instafeed-container img:last-child{
+    margin-bottom: 150px;
 }
 #instafeed-container img:hover{
     transform: scale(1.1);
 }
-@media only screen and (min-width: 2000px){
+@media only screen and (min-width: 2500px){
     #instafeed-container img{
-        width: 400px;
-        height: 400px;
+        margin: 50px;
+    }
+}
+@media only screen and (min-width: 2360px){
+    #instafeed-container{
+        width: 50vw;
+    }
+}
+@media only screen and (min-width: 2000px){
+    #instafeed-container{
+        width: 70vw;
+    }
+    #instafeed-container img{
+        width: 350px;
+        height: 350px;
+        margin: 10px;
     }
 }
 @media only screen and (min-width: 1600px){
+    #instafeed-container{
+        width: 80vw;
+    }
     #instafeed-container img{
         width: 350px;
         height: 350px;
     }
 }
+
 @media only screen and (max-width: 1024px){
     #instafeed-container img{
         width: 200px;
@@ -1133,6 +1160,9 @@ body{
     .insta-section .insta-heading h1{
         font-size: 50px;
         margin-left: 0;
+    }
+    #instafeed-container img:last-child{
+        margin-bottom: 20px;
     }
 }
 /* **********************************************INSTAGRAM SECTION ENDS************************************************ */
