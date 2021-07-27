@@ -17,6 +17,10 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome close  -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <title>KIRA Esports</title>
@@ -96,11 +100,11 @@
     <!-- explore section  -->
     <div class="main-container">
         <div class="card1" data-aos="fade-up">
-                <h1>GAMING TEAM</h1>
-                <P>KIRA owns its own esports team which currently stands at #29th in the world after recently defeating
-                    the
-                    Japanese Powerhouse “CYCLOPS ATHLETE GAMING”</P>
-                <a href="#">LEARN MORE</a>
+            <h1>GAMING TEAM</h1>
+            <P>KIRA owns its own esports team which currently stands at #29th in the world after recently defeating
+                the
+                Japanese Powerhouse “CYCLOPS ATHLETE GAMING”</P>
+            <a href="#">LEARN MORE</a>
         </div>
         <div class="card2" data-aos="fade-up">
             <h1>TALENT MANAGEMENT AKA “GG SQUAD”</h1>
@@ -183,8 +187,10 @@
         <div class="insta-heading">
             <h1>KIRA’S INSTAGRAM</h1>
         </div>
-        <div id="instafeed-container" class="slider">
+        <div class="insta-img">
+            <div id="instafeed-container" class="slider">
 
+            </div>
         </div>
     </div>
     <div class="mid-line"></div>
@@ -249,13 +255,37 @@
 
 
 
+    <!-- *****************************************************javascript******************************************** -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('#instafeed-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
     <!-- instafeed  -->
     <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
     <script type="text/javascript">
-    var InstagramToken = 'IGQVJWLTByZA2lWQ1BiSTRRdXg2NDdySUZA5b20xa0lGZA0NRQy1acGdyNXJzZA3doSDR4RnhCbW50YlNSMWpmdnBRZAVlXaDh4MlA5V29OX09oV2pZAejNQTXFDd0QzNGk1T2otQ09tazl3';
+        var InstagramToken = 'IGQVJWLTByZA2lWQ1BiSTRRdXg2NDdySUZA5b20xa0lGZA0NRQy1acGdyNXJzZA3doSDR4RnhCbW50YlNSMWpmdnBRZAVlXaDh4MlA5V29OX09oV2pZAejNQTXFDd0QzNGk1T2otQ09tazl3';
         var userFeed = new Instafeed({
             get: 'user',
-            limit: 4,
+            limit: 12,
             target: "instafeed-container",
             resolution: 'low_resolution',
             accessToken: 'IGQVJYRzZAYR3ZAkX1FiT2lLVHJhSW5QR3JRdl83TElZASmlhYUxCcmtBa1R3STFMZAjhGczVSajJweTZANd3FzMm9lZA3JYc3JodHNob2I5X05MRkhYaU9GS0xlSnphLXpfajN6SF95NG93'
